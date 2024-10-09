@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app" class="h-screen bg-gray-300 flex justify-center items-center">
+      <div class="flex justify-center items-center gap-2">
+        <button
+          @click="increment"
+          class="bg-blue-500 w-24 h-24 rounded-full text-3xl"
+        >
+          +
+        </button>
+        <div class="w-52 h-52 bg-green-500 rounded-md shadow-lg">
+          <h2 class="text-center text-3xl py-4">Counter</h2>
+          <div class="w-full h-full py-12 flex justify-center bg-red-400">
+            <span class="py-4 text-5xl">{{count}}</span>
+          </div>
+        </div>
+        <button
+          @click="decrement"
+          class="bg-violet-500 w-24 h-24 p-4 rounded-full text-3xl"
+        >
+          -
+        </button>
+      </div>
+    </div>
+    <script src="./counter.js"></script>
+  </body>
+</html>
