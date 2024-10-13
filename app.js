@@ -3,10 +3,8 @@ const app = Vue.createApp({
   data() {
     return {
       name: "rudal",
-      count: 0,
     };
   },
-
 });
 
 app.mount("#app");
